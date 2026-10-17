@@ -1,24 +1,144 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Portfolio of Hajer Ezzat Sarhan — Information Systems student interested in data analysis, machine learning, and web development.">
 <title>Hajer Ezzat Sarhan | Portfolio</title>
 <style>
-:root{--bg:#f7f8f6;--surface:#fff;--ink:#202b31;--muted:#66757c;--accent:#557f78;--accent2:#dcebe5;--line:#e4eae6;--soft:#eef3f0;--shadow:0 18px 50px rgba(35,61,53,.08)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}.brand{font-weight:800;letter-spacing:-.04em}.brand span{color:var(--accent)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.navlinks a:hover,.textlink:hover{color:var(--accent)}.hero{padding:76px 0 72px;display:grid;grid-template-columns:1.4fr .8fr;gap:52px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;background:var(--accent2);color:#365d55;padding:7px 13px;border-radius:99px;font-size:.82rem;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}h1{font-size:clamp(2.7rem,6vw,4.8rem);line-height:1.06;letter-spacing:-.065em;margin:22px 0}.hero h1 span{color:var(--accent)}.lead{font-size:1.12rem;color:var(--muted);max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;font-weight:700;font-size:.94rem;border:1px solid var(--line);transition:.2s}.btn.primary{background:var(--accent);color:white;border-color:var(--accent)}.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.profile-card{background:linear-gradient(145deg,#e4eee9,#f8faf8);border:1px solid #dce7e1;border-radius:28px;padding:28px;min-height:320px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);position:relative;overflow:hidden}.profile-card:after{content:"";position:absolute;width:210px;height:210px;border:1px solid #c4d9cf;border-radius:50%;right:-65px;top:-65px;box-shadow:0 0 0 24px rgba(255,255,255,.24),0 0 0 48px rgba(255,255,255,.16)}.monogram{width:78px;height:78px;border-radius:23px;background:var(--accent);color:white;display:grid;place-items:center;font-size:1.7rem;font-weight:800;letter-spacing:-.06em;z-index:1}.profile-card h2{font-size:1.5rem;line-height:1.2;letter-spacing:-.04em;margin:28px 0 8px;z-index:1}.profile-card p{color:var(--muted);margin:0;z-index:1}.mini-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;z-index:1}.mini-tags span,.tag{background:rgba(255,255,255,.8);border:1px solid #dce7e1;border-radius:99px;padding:5px 10px;font-size:.78rem;color:#47665e}.section{padding:66px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}.kicker{text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-size:.76rem;font-weight:800}h2.section-title{font-size:clamp(1.9rem,4vw,2.65rem);letter-spacing:-.055em;line-height:1.15;margin:8px 0 0}.section-intro{max-width:480px;color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 8px 28px rgba(35,61,53,.035)}.panel p{color:var(--muted);margin:0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{background:var(--soft);border-radius:15px;padding:16px}.fact strong{display:block;font-size:1.1rem;letter-spacing:-.03em}.fact small{color:var(--muted)}.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}.skill .ico{width:38px;height:38px;background:var(--accent2);border-radius:12px;display:grid;place-items:center;color:var(--accent);font-weight:800;margin-bottom:15px}.skill h3{font-size:1rem;margin:0 0 8px}.skill p{font-size:.9rem;color:var(--muted);margin:0}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:0 8px 28px rgba(35,61,53,.035)}.project-top{padding:22px;background:linear-gradient(135deg,#e3eee8,#f3f7f4);min-height:140px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.project-number{font-size:3.1rem;line-height:1;color:#8caea1;font-weight:800;letter-spacing:-.08em}.project-body{padding:23px}.project h3{font-size:1.35rem;letter-spacing:-.04em;margin:0 0 8px}.project p{color:var(--muted);margin:0 0 17px}.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{background:#f6f8f6}.experience{display:grid;grid-template-columns:1fr 1fr;gap:18px}.role{position:relative;padding-left:22px;border-left:2px solid #d7e6de}.role:before{content:"";position:absolute;left:-6px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--accent)}.role h3{margin:0;font-size:1.06rem}.role .meta{color:var(--accent);font-size:.86rem;font-weight:700;margin:4px 0 8px}.role p{color:var(--muted);font-size:.94rem;margin:0}.contact{background:#e5eee9;border:1px solid #d7e5dd;border-radius:28px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.055em;line-height:1.12;margin:8px 0 12px}.contact p{color:var(--muted);margin:0}.contact-actions{display:flex;flex-direction:column;gap:10px;min-width:220px}.footer{padding:26px 0 34px;display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:.86rem}.textlink{color:var(--accent);font-weight:700}.note{font-size:.83rem;color:var(--muted);margin-top:18px}.mobile-menu{display:none}
+:root{--bg:#f7f8f6;--surface:#fff;--ink:#202b31;--muted:#66757c;--accent:#557f78;--accent2:#dcebe5;--line:#e4eae6;--soft:#eef3f0;--shadow:0 18px 50px rgba(35,61,53,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{font-weight:800;letter-spacing:-.04em}
+.brand span,.hero h1 span{color:var(--accent)}
+.navlinks{display:flex;gap:24px;color:var(--muted);font-size:.92rem}
+.navlinks a:hover,.textlink:hover{color:var(--accent)}
+.hero{padding:76px 0 72px;display:grid;grid-template-columns:1.4fr .8fr;gap:52px;align-items:center}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;background:var(--accent2);color:#365d55;padding:7px 13px;border-radius:99px;font-size:.82rem;font-weight:700}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(2.7rem,6vw,4.8rem);line-height:1.06;letter-spacing:-.065em;margin:22px 0}
+.lead{font-size:1.12rem;color:var(--muted);max-width:610px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;font-weight:700;font-size:.94rem;border:1px solid var(--line);transition:.2s}
+.btn.primary{background:var(--accent);color:white;border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.profile-card{background:linear-gradient(145deg,#e4eee9,#f8faf8);border:1px solid #dce7e1;border-radius:28px;padding:28px;min-height:320px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.profile-card:after{content:"";position:absolute;width:210px;height:210px;border:1px solid #c4d9cf;border-radius:50%;right:-65px;top:-65px;box-shadow:0 0 0 24px rgba(255,255,255,.24),0 0 0 48px rgba(255,255,255,.16)}
+.monogram{width:78px;height:78px;border-radius:23px;background:var(--accent);color:white;display:grid;place-items:center;font-size:1.7rem;font-weight:800;z-index:1}
+.profile-card h2{font-size:1.5rem;line-height:1.2;letter-spacing:-.04em;margin:28px 0 8px;z-index:1}
+.profile-card p,.panel p,.project p,.role p{color:var(--muted)}
+.profile-card p{margin:0;z-index:1}
+.mini-tags,.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;z-index:1}
+.mini-tags span,.tag{background:rgba(255,255,255,.8);border:1px solid #dce7e1;border-radius:99px;padding:5px 10px;font-size:.78rem;color:#47665e}
+.section{padding:66px 0}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}
+.kicker{text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-size:.76rem;font-weight:800}
+h2.section-title{font-size:clamp(1.9rem,4vw,2.65rem);letter-spacing:-.055em;line-height:1.15;margin:8px 0 0}
+.section-intro{max-width:480px;color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 8px 28px rgba(35,61,53,.035)}
+.panel p{margin:0}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fact{background:var(--soft);border-radius:15px;padding:16px}
+.fact strong{display:block;font-size:1.1rem;letter-spacing:-.03em}
+.fact small{color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.skill{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+.skill .ico{width:38px;height:38px;background:var(--accent2);border-radius:12px;display:grid;place-items:center;color:var(--accent);font-weight:800;margin-bottom:15px}
+.skill h3{font-size:1rem;margin:0 0 8px}
+.skill p{font-size:.9rem;color:var(--muted);margin:0}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project{overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:0 8px 28px rgba(35,61,53,.035)}
+.project-top{padding:22px;background:linear-gradient(135deg,#e3eee8,#f3f7f4);min-height:140px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.project-number{font-size:3.1rem;line-height:1;color:#8caea1;font-weight:800;letter-spacing:-.08em}
+.project-body{padding:23px}
+.project h3{font-size:1.35rem;letter-spacing:-.04em;margin:0 0 8px}
+.project p{margin:0 0 17px}
+.tag{background:#f6f8f6}
+.experience{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.role{position:relative;padding-left:22px;border-left:2px solid #d7e6de}
+.role:before{content:"";position:absolute;left:-6px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.role h3{margin:0;font-size:1.06rem}
+.role .meta{color:var(--accent);font-size:.86rem;font-weight:700;margin:4px 0 8px}
+.role p{font-size:.94rem;margin:0}
+.contact{background:#e5eee9;border:1px solid #d7e5dd;border-radius:28px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.contact h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.055em;line-height:1.12;margin:8px 0 12px}
+.contact p{color:var(--muted);margin:0}
+.contact-actions{display:flex;flex-direction:column;gap:10px;min-width:220px}
+.footer{padding:26px 0 34px;display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:.86rem}
+.textlink{color:var(--accent);font-weight:700}
+.note{font-size:.83rem;color:var(--muted);margin-top:18px}
 @media(max-width:800px){.hero{grid-template-columns:1fr;padding:48px 0}.profile-card{min-height:270px}.about-grid,.experience{grid-template-columns:1fr}.skills{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-intro{margin-top:14px}.contact{display:block;padding:27px}.contact-actions{margin-top:22px}.navlinks{gap:12px;font-size:.82rem}}
 @media(max-width:520px){.wrap{width:min(100% - 28px,1100px)}.nav{align-items:flex-start}.navlinks{max-width:210px;justify-content:flex-end;flex-wrap:wrap;gap:6px 12px}.brand{font-size:.92rem}.skills,.projects{grid-template-columns:1fr}.section{padding:48px 0}.hero h1{font-size:2.85rem}.facts{grid-template-columns:1fr 1fr}.footer{display:block}.footer span{display:block;margin-top:6px}}
 </style>
 </head>
 <body>
-<header class="wrap nav"><a class="brand" href="#home">Hajer<span>.</span></a><nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></header>
+<header class="wrap nav">
+<a class="brand" href="#home">Hajer<span>.</span></a>
+<nav class="navlinks" aria-label="Main navigation">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+</nav>
+</header>
 <main>
-<section class="wrap hero" id="home"><div><div class="eyebrow"><span class="dot"></span> Information Systems Student</div><h1>Hi, I’m Hajer.<br><span>I turn data into insight.</span></h1><p class="lead">I’m a Computer Science student at Helwan University interested in data analysis, machine learning, and web development. I enjoy exploring data, building useful solutions, and continuously learning new technologies.</p><div class="actions"><a class="btn primary" href="#projects">Explore my work ↗</a><a class="btn" href="#contact">Get in touch</a></div></div><aside class="profile-card"><div class="monogram">HS</div><div><h2>Hajer Ezzat Sarhan</h2><p>Data · AI · Web Development</p><div class="mini-tags"><span>Python</span><span>Machine Learning</span><span>SQL</span><span>JavaScript</span></div></div></aside></section>
-<section class="section" id="about"><div class="wrap"><div class="section-head"><div><div class="kicker">A little about me</div><h2 class="section-title">Curious by nature.<br>Practical by approach.</h2></div><p class="section-intro">I’m building my experience across data, AI, and software development, combining university study with hands-on training and personal projects.</p></div><div class="about-grid"><div class="panel"><p>I study Information Systems at the Faculty of Computers & Artificial Intelligence, Helwan University. My interests include using Python to explore datasets, communicating findings through visualizations, and applying machine-learning concepts to real-world questions. I also have a foundation in responsive front-end and full-stack web development.</p><p style="margin-top:15px">I value thoughtful problem-solving, clear communication, and learning by building.</p></div><div class="facts"><div class="fact"><strong>Helwan University</strong><small>Information Systems</small></div><div class="fact"><strong>Data + AI</strong><small>Primary interests</small></div><div class="fact"><strong>Python & SQL</strong><small>Data toolkit</small></div><div class="fact"><strong>Web Development</strong><small>Front-end foundations</small></div></div></div></div></section>
-<section class="section" id="skills"><div class="wrap"><div class="section-head"><div><div class="kicker">What I work with</div><h2 class="section-title">Skills & tools</h2></div><p class="section-intro">A growing toolkit across programming, analytics, AI, and web technologies.</p></div><div class="skills"><article class="skill"><div class="ico">Py</div><h3>Programming</h3><p>Python, C, JavaScript, R, SQL</p></article><article class="skill"><div class="ico">↗</div><h3>Data & AI</h3><p>Data analysis, visualization, machine-learning fundamentals, data structures and algorithms</p></article><article class="skill"><div class="ico">&lt;/&gt;</div><h3>Web</h3><p>HTML5, CSS3, responsive design, front-end and full-stack fundamentals</p></article><article class="skill"><div class="ico">▦</div><h3>Tools & databases</h3><p>Tableau, Microsoft Excel, MongoDB, Git, VS Code</p></article></div></div></section>
-<section class="section" id="projects"><div class="wrap"><div class="section-head"><div><div class="kicker">Selected work</div><h2 class="section-title">Projects I’ve explored</h2></div><p class="section-intro">A couple of projects combining data exploration, analysis, and communicating patterns clearly.</p></div><div class="projects"><article class="project"><div class="project-top"><div><div class="kicker">Data analysis · Predictive modeling</div><h3 style="margin:8px 0 0">RoadRisk</h3></div><div class="project-number">01</div></div><div class="project-body"><p>Analyzed traffic-incident data to explore accident patterns and risk factors. The work includes data preprocessing, exploratory analysis, visualization, and predictive-modeling techniques to investigate traffic risk.</p><div class="tags"><span class="tag">R</span><span class="tag">Python</span><span class="tag">Data Analysis</span><span class="tag">ML</span></div></div></article><article class="project"><div class="project-top"><div><div class="kicker">Data storytelling · Visualization</div><h3 style="margin:8px 0 0">Flaming Insights</h3></div><div class="project-number">02</div></div><div class="project-body"><p>Explored wildfire records to identify geographic and temporal trends, cleaned and analyzed data with Python, and created Tableau visualizations to communicate findings.</p><div class="tags"><span class="tag">Python</span><span class="tag">Tableau</span><span class="tag">Data Cleaning</span><span class="tag">Visualization</span></div></div></article></div><p class="note">Project descriptions are based on the information in my CV. Add GitHub or live-demo links when available.</p></div></section>
-<section class="section" id="experience"><div class="wrap"><div class="section-head"><div><div class="kicker">Learning & experience</div><h2 class="section-title">Experience and training</h2></div><p class="section-intro">Training and freelance experience supporting my growth across machine learning and software development.</p></div><div class="panel experience"><div class="role"><h3>Machine Learning Intern · Orange</h3><div class="meta">Internship · 1 year</div><p>Machine-learning internship experience. Specific responsibilities and project details can be added to reflect the work completed.</p></div><div class="role"><h3>Freelance Machine Learning</h3><div class="meta">Machine Learning Freelance · 9 months</div><p>Freelance work in machine learning. Specific models, tools, deliverables, and project examples can be added to accurately showcase the work completed.</p></div><div class="role"><h3>Algoriza</h3><div class="meta">Full-Stack Web Development Trainee</div><p>Practiced front-end and back-end technologies, responsive interfaces, and database concepts through hands-on exercises.</p></div><div class="role"><h3>Information Technology Institute (ITI)</h3><div class="meta">Front-End & Full-Stack Development Trainee</div><p>Built responsive interfaces with HTML, CSS, and JavaScript and practiced Git and software-development workflows.</p></div><div class="role"><h3>ICBC</h3><div class="meta">Artificial Intelligence Track Trainee</div><p>Studied foundational AI and machine-learning concepts and applied them through practical exercises and projects.</p></div><div class="role"><h3>Education</h3><div class="meta">Helwan University · 2023–Present</div><p>Faculty of Computers & Artificial Intelligence, Information Systems Department.</p></div></div><p class="note">Before publishing, verify dates and internship details, and replace general descriptions with accurate examples of your work.</p></div></section>
-<section class="section" id="contact"><div class="wrap"><div class="contact"><div><div class="kicker">Let’s connect</div><h2>Have a project or opportunity<br>in mind?</h2><p>I’d be happy to connect and talk about data, AI, or web development.</p></div><div class="contact-actions"><a class="btn primary" href="mailto:hajerezzatsarhan@gmail.com">✉ Email me</a><a class="btn" href="https://www.linkedin.com/in/hajer-ezzat-sarhan-7694b8373" target="_blank" rel="noreferrer">↗ Connect on LinkedIn</a></div></div></div></section>
-</main><footer class="wrap footer"><span>© <span id="year">2026</span> Hajer Ezzat Sarhan</span><span>Designed with care · <a class="textlink" href="#home">Back to top ↑</a></span></footer>
+<section class="wrap hero" id="home">
+<div>
+<div class="eyebrow"><span class="dot"></span> Information Systems Student</div>
+<h1>Hi, I’m Hajer.<br><span>I turn data into insight.</span></h1>
+<p class="lead">I’m a Computer Science student at Helwan University interested in data analysis, machine learning, and web development. I enjoy exploring data, building useful solutions, and continuously learning new technologies.</p>
+<div class="actions">
+<a class="btn primary" href="#projects">Explore my work ↗</a>
+<a class="btn" href="#contact">Get in touch</a>
+<a class="btn" href="Hajer_Ezzat_CV.pdf" download>Download CV ↓</a>
+</div>
+</div>
+<aside class="profile-card">
+<div class="monogram">HS</div>
+<div><h2>Hajer Ezzat Sarhan</h2><p>Data · AI · Web Development</p><div class="mini-tags"><span>Python</span><span>Machine Learning</span><span>SQL</span><span>JavaScript</span></div></div>
+</aside>
+</section>
+<section class="section" id="about"><div class="wrap">
+<div class="section-head"><div><div class="kicker">A little about me</div><h2 class="section-title">Curious by nature.<br>Practical by approach.</h2></div><p class="section-intro">I’m building my experience across data, AI, and software development, combining university study with hands-on training and personal projects.</p></div>
+<div class="about-grid">
+<div class="panel"><p>I study Information Systems at the Faculty of Computers & Artificial Intelligence, Helwan University. My interests include using Python to explore datasets, communicating findings through visualizations, and applying machine-learning concepts to real-world questions. I also have a foundation in responsive front-end and full-stack web development.</p><p style="margin-top:15px">I value thoughtful problem-solving, clear communication, and learning by building.</p></div>
+<div class="facts"><div class="fact"><strong>Helwan University</strong><small>Information Systems</small></div><div class="fact"><strong>Data + AI</strong><small>Primary interests</small></div><div class="fact"><strong>Python & SQL</strong><small>Data toolkit</small></div><div class="fact"><strong>Web Development</strong><small>Front-end foundations</small></div></div>
+</div></div></section>
+<section class="section" id="skills"><div class="wrap">
+<div class="section-head"><div><div class="kicker">What I work with</div><h2 class="section-title">Skills & tools</h2></div><p class="section-intro">A growing toolkit across programming, analytics, AI, and web technologies.</p></div>
+<div class="skills">
+<article class="skill"><div class="ico">Py</div><h3>Programming</h3><p>Python, C, JavaScript, R, SQL</p></article>
+<article class="skill"><div class="ico">↗</div><h3>Data & AI</h3><p>Data analysis, visualization, machine-learning fundamentals, data structures and algorithms</p></article>
+<article class="skill"><div class="ico">&lt;/&gt;</div><h3>Web</h3><p>HTML5, CSS3, responsive design, front-end and full-stack fundamentals</p></article>
+<article class="skill"><div class="ico">▦</div><h3>Tools & databases</h3><p>Tableau, Microsoft Excel, MongoDB, Git, VS Code</p></article>
+</div></div></section>
+<section class="section" id="projects"><div class="wrap">
+<div class="section-head"><div><div class="kicker">Selected work</div><h2 class="section-title">Projects I’ve explored</h2></div><p class="section-intro">A couple of projects combining data exploration, analysis, and communicating patterns clearly.</p></div>
+<div class="projects">
+<article class="project"><div class="project-top"><div><div class="kicker">Data analysis · Predictive modeling</div><h3 style="margin:8px 0 0">RoadRisk</h3></div><div class="project-number">01</div></div><div class="project-body"><p>Analyzed traffic-incident data to explore accident patterns and risk factors. The work includes data preprocessing, exploratory analysis, visualization, and predictive-modeling techniques to investigate traffic risk.</p><div class="tags"><span class="tag">R</span><span class="tag">Python</span><span class="tag">Data Analysis</span><span class="tag">ML</span></div></div></article>
+<article class="project"><div class="project-top"><div><div class="kicker">Data storytelling · Visualization</div><h3 style="margin:8px 0 0">Flaming Insights</h3></div><div class="project-number">02</div></div><div class="project-body"><p>Explored wildfire records to identify geographic and temporal trends, cleaned and analyzed data with Python, and created Tableau visualizations to communicate findings.</p><div class="tags"><span class="tag">Python</span><span class="tag">Tableau</span><span class="tag">Data Cleaning</span><span class="tag">Visualization</span></div></div></article>
+</div><p class="note">Project descriptions are based on the information in my CV. Add GitHub or live-demo links when available.</p>
+</div></section>
+<section class="section" id="experience"><div class="wrap">
+<div class="section-head"><div><div class="kicker">Learning & experience</div><h2 class="section-title">Experience and training</h2></div><p class="section-intro">Training and freelance experience supporting my growth across machine learning and software development.</p></div>
+<div class="panel experience">
+<div class="role"><h3>Machine Learning Intern · Orange</h3><div class="meta">Internship · 1 year</div><p>Machine-learning internship experience. Specific responsibilities and project details can be added to reflect the work completed.</p></div>
+<div class="role"><h3>Freelance Machine Learning</h3><div class="meta">Machine Learning Freelance · 9 months</div><p>Freelance work in machine learning. Specific models, tools, deliverables, and project examples can be added to accurately showcase the work completed.</p></div>
+<div class="role"><h3>Algoriza</h3><div class="meta">Full-Stack Web Development Trainee</div><p>Practiced front-end and back-end technologies, responsive interfaces, and database concepts through hands-on exercises.</p></div>
+<div class="role"><h3>Information Technology Institute (ITI)</h3><div class="meta">Front-End & Full-Stack Development Trainee</div><p>Built responsive interfaces with HTML, CSS, and JavaScript and practiced Git and software-development workflows.</p></div>
+<div class="role"><h3>ICBC</h3><div class="meta">Artificial Intelligence Track Trainee</div><p>Studied foundational AI and machine-learning concepts and applied them through practical exercises and projects.</p></div>
+<div class="role"><h3>Education</h3><div class="meta">Helwan University · 2023–Present</div><p>Faculty of Computers & Artificial Intelligence, Information Systems Department.</p></div>
+</div><p class="note">Before publishing, verify dates and internship details, and replace general descriptions with accurate examples of your work.</p>
+</div></section>
+<section class="section" id="contact"><div class="wrap">
+<div class="contact"><div><div class="kicker">Let’s connect</div><h2>Have a project or opportunity<br>in mind?</h2><p>I’d be happy to connect and talk about data, AI, or web development.</p></div>
+<div class="contact-actions"><a class="btn primary" href="mailto:hajerezzatsarhan@gmail.com">✉ Email me</a><a class="btn" href="https://www.linkedin.com/in/hajer-ezzat-sarhan-7694b8373" target="_blank" rel="noreferrer">↗ Connect on LinkedIn</a></div>
+</div></div></section>
+</main>
+<footer class="wrap footer"><span>© <span id="year">2026</span> Hajer Ezzat Sarhan</span><span>Designed with care · <a class="textlink" href="#home">Back to top ↑</a></span></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+</body>
+</html>
